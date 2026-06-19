@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentina Sea &amp; Sun · Apartament premium în Mamaia Nord</title>
+  <meta name="description" content="Valentina Sea &amp; Sun Apartment — apartament cochet, complet renovat, în Onix Blue Residence, Mamaia Nord, Năvodari. 2 camere, balcon, la câțiva pași de plajă. Rezervă-ți vacanța la mare." />
+  <meta name="theme-color" content="#0b6b73" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Valentina Sea &amp; Sun · Apartament în Mamaia Nord" />
+  <meta property="og:description" content="Apartament premium în Onix Blue Residence, Mamaia Nord — la malul Mării Negre." />
+  <meta property="og:image" content="images/living-1.jpg" />
+  <meta property="og:locale" content="ro_RO" />
+
+  <!-- Favicon (inline SVG: soare peste val) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b6b73'/%3E%3Ccircle cx='32' cy='27' r='12' fill='%23f5b651'/%3E%3Cpath d='M6 44c6 0 6 5 13 5s7-5 13-5 6 5 13 5 7-5 13-5' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Cursor glow (desktop) -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Intro loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__sun"></span>
+      <span class="loader__name">Valentina</span>
+      <span class="loader__sub">Sea &amp; Sun</span>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="Valentina Sea and Sun — acasă">
+        <span class="brand__mark">V</span>
+        <span class="brand__text">
+          <strong>Valentina</strong>
+          <small>Sea &amp; Sun · Mamaia Nord</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigare principală">
+        <a href="#despre" class="nav__link">Despre</a>
+        <a href="#facilitati" class="nav__link">Facilități</a>
+        <a href="#galerie" class="nav__link">Galerie</a>
+        <a href="#tur" class="nav__link">Tur video</a>
+        <a href="#locatie" class="nav__link">Locație</a>
+        <a href="#contact" class="nav__link nav__link--cta">Rezervă</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Deschide meniul" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <img src="images/living-1.jpg" alt="Living open-space elegant în apartamentul Valentina Sea and Sun" class="hero__img" id="heroImg" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+        <div class="hero__sun" aria-hidden="true"></div>
+        <div class="hero__grain" aria-hidden="true"></div>
+      </div>
+
+      <!-- floating petals/motes -->
+      <div class="motes" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow" data-reveal>
+          <span class="pin">📍</span> Onix Blue Residence · Năvodari
+        </p>
+        <h1 class="hero__title">
+          <span class="line" data-split>Valentina</span>
+          <span class="line hero__title--accent" data-split>Sea &amp; Sun</span>
+        </h1>
+        <p class="hero__lead" data-reveal>
+          Apartament premium, complet renovat, la malul Mării Negre — confort, design &amp; lumină caldă în inima stațiunii Mamaia Nord.
+        </p>
+        <div class="hero__actions" data-reveal>
+          <a href="#contact" class="btn btn--sun">Rezervă acum</a>
+          <a href="#galerie" class="btn btn--ghost">Vezi galeria</a>
+        </div>
+
+        <ul class="hero__pills" data-reveal>
+          <li>2 camere</li>
+          <li>până la 4 oaspeți</li>
+          <li>balcon</li>
+          <li>la pas de plajă</li>
+        </ul>
+      </div>
+
+      <a href="#despre" class="scroll-cue" aria-label="Derulează în jos">
+        <span class="scroll-cue__mouse"><span></span></span>
+        <span class="scroll-cue__txt">scroll</span>
+      </a>
+
+      <!-- wave divider -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64 C240,120 480,0 720,40 C960,80 1200,120 1440,56 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== DESPRE / STATS ===================== -->
+    <section class="section despre" id="despre">
+      <div class="container despre__grid">
+        <div class="despre__text">
+          <p class="kicker" data-reveal>Bun venit</p>
+          <h2 class="h2" data-reveal>O vacanță ca acasă, doar mai aproape de mare</h2>
+          <p class="lead" data-reveal>
+            <strong>Valentina Sea &amp; Sun</strong> este un apartament cochet și luminos, amenajat cu gust în
+            <strong>Onix Blue Residence</strong>, una dintre cele mai căutate rezidențe din Mamaia Nord. Living open-space
+            cu bucătărie utilată, dormitor matrimonial primitor și un balcon numai bun de relaxare seara.
+          </p>
+          <p data-reveal>
+            Tencuială decorativă, candelabru Murano, lenjerie premium și tot confortul modern — pregătit să te
+            întâmpine după o zi pe plajă.
+          </p>
+          <a href="#facilitati" class="link-arrow" data-reveal>Descoperă facilitățile <span>→</span></a>
+        </div>
+
+        <div class="stats" data-reveal>
+          <div class="stat">
+            <span class="stat__num" data-count="2">0</span>
+            <span class="stat__label">camere</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="4">0</span>
+            <span class="stat__label">oaspeți</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="1">0</span>
+            <span class="stat__label">baie · duș walk-in</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="1">0</span>
+            <span class="stat__label">balcon cu loc de stat</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Wi-Fi gratuit</span><span>•</span><span>Aer condiționat</span><span>•</span><span>Smart TV</span><span>•</span>
+        <span>Bucătărie utilată</span><span>•</span><span>Duș walk-in</span><span>•</span><span>Balcon</span><span>•</span>
+        <span>Parcare</span><span>•</span><span>Lift</span><span>•</span><span>Lenjerie premium</span><span>•</span>
+        <span>Candelabru Murano</span><span>•</span><span>La pas de plajă</span><span>•</span>
+        <span>Wi-Fi gratuit</span><span>•</span><span>Aer condiționat</span><span>•</span><span>Smart TV</span><span>•</span>
+        <span>Bucătărie utilată</span><span>•</span><span>Duș walk-in</span><span>•</span><span>Balcon</span><span>•</span>
+        <span>Parcare</span><span>•</span><span>Lift</span><span>•</span><span>Lenjerie premium</span><span>•</span>
+        <span>Candelabru Murano</span><span>•</span><span>La pas de plajă</span><span>•</span>
+      </div>
+    </div>
+
+    <!-- ===================== FACILITĂȚI ===================== -->
+    <section class="section facilitati" id="facilitati">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker" data-reveal>Facilități</p>
+          <h2 class="h2" data-reveal>Tot ce-ți trebuie pentru un sejur fără griji</h2>
+        </div>
+
+        <div class="features">
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            </span>
+            <h3>Wi-Fi rapid</h3>
+            <p>Internet gratuit în tot apartamentul, ideal și pentru lucru.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M12 6 8.5 3.5M12 6l3.5-2.5M12 18l-3.5 2.5M12 18l3.5 2.5"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M6 12 3.5 8.5M6 12l-2.5 3.5M18 12l2.5-3.5M18 12l2.5 3.5"/></svg>
+            </span>
+            <h3>Aer condiționat</h3>
+            <p>Răcoare pe orice caniculă de vară, în fiecare cameră.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="m9 21 3-3 3 3"/></svg>
+            </span>
+            <h3>Smart TV</h3>
+            <p>Televizor inteligent pentru serile de relaxare.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18v2a7 7 0 0 1-7 7h-4a7 7 0 0 1-7-7z"/><path d="M7 11V4M11 11V4M15 11V4"/></svg>
+            </span>
+            <h3>Bucătărie utilată</h3>
+            <p>Plită, cuptor, frigider și espressor — gata de gătit.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v7"/><path d="M8 10V5a2 2 0 0 1 2-2h1"/><line x1="12" y1="14" x2="12" y2="15"/><line x1="16" y1="14" x2="16" y2="15"/><line x1="8" y1="14" x2="8" y2="15"/></svg>
+            </span>
+            <h3>Baie cu duș walk-in</h3>
+            <p>Baie modernă, cu cabină de duș spațioasă și finisaje fine.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+            </span>
+            <h3>Balcon</h3>
+            <p>Loc de relaxare în aer liber, perfect pentru cafeaua de dimineață.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V8h4.5a2.5 2.5 0 0 1 0 5H9"/></svg>
+            </span>
+            <h3>Parcare &amp; lift</h3>
+            <p>Loc de parcare în rezidență și lift până la etaj.</p>
+          </article>
+
+          <article class="feature" data-reveal>
+            <span class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"/><path d="M5 9h14l-2 4H7z"/><path d="M9 13v3a3 3 0 0 0 6 0v-3"/><path d="M12 19v2"/></svg>
+            </span>
+            <h3>Design premium</h3>
+            <p>Candelabru Murano, tencuială decorativă și lenjerie de calitate.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERIE ===================== -->
+    <section class="section galerie" id="galerie">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker" data-reveal>Galerie foto</p>
+          <h2 class="h2" data-reveal>Fiecare colț, gândit pentru tine</h2>
+          <div class="filters" data-reveal>
+            <button class="chip is-active" data-filter="all">Toate</button>
+            <button class="chip" data-filter="living">Living</button>
+            <button class="chip" data-filter="dormitor">Dormitor</button>
+            <button class="chip" data-filter="bucatarie">Bucătărie</button>
+            <button class="chip" data-filter="baie">Baie</button>
+            <button class="chip" data-filter="balcon">Balcon</button>
+          </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <figure class="tile" data-cat="living"><img src="images/living-1.jpg" width="1600" height="1200" alt="Living open-space cu canapea bouclé și perete din tencuială decorativă" loading="lazy" data-caption="Living open-space cu perete din tencuială decorativă"><figcaption>Living open-space</figcaption></figure>
+          <figure class="tile" data-cat="living"><img src="images/living-5.jpg" width="1200" height="1600" alt="Trecere fluidă între bucătărie și zona de zi" loading="lazy" data-caption="Trecere fluidă între bucătărie și living"><figcaption>Zona de zi</figcaption></figure>
+          <figure class="tile" data-cat="bucatarie"><img src="images/kitchen-1.jpg" width="1200" height="1600" alt="Bucătărie complet utilată cu blat negru" loading="lazy" data-caption="Bucătărie complet utilată"><figcaption>Bucătărie</figcaption></figure>
+          <figure class="tile" data-cat="dormitor"><img src="images/bedroom-1.jpg" width="1309" height="1600" alt="Dormitor matrimonial cu lenjerie premium" loading="lazy" data-caption="Dormitor matrimonial cu lenjerie premium"><figcaption>Dormitor</figcaption></figure>
+          <figure class="tile" data-cat="balcon"><img src="images/balcony-1.jpg" width="1200" height="1600" alt="Balcon cu fotolii și flori, seara" loading="lazy" data-caption="Balcon cu loc de relaxare, seara"><figcaption>Balcon</figcaption></figure>
+          <figure class="tile" data-cat="living"><img src="images/living-2.jpg" width="1600" height="1200" alt="Zona de zi cu bar și scaune elegante" loading="lazy" data-caption="Zona de zi cu bar și scaune elegante"><figcaption>Living &amp; bar</figcaption></figure>
+          <figure class="tile" data-cat="bucatarie"><img src="images/kitchen-2.jpg" width="1200" height="1600" alt="Electrocasnice moderne în bucătărie" loading="lazy" data-caption="Electrocasnice moderne"><figcaption>Bucătărie</figcaption></figure>
+          <figure class="tile" data-cat="dormitor"><img src="images/bedroom-2.jpg" width="1298" height="1600" alt="Dormitor cu perete din tencuială decorativă și comodă" loading="lazy" data-caption="Dormitor cu perete din tencuială decorativă"><figcaption>Dormitor</figcaption></figure>
+          <figure class="tile" data-cat="living"><img src="images/living-3.jpg" width="1200" height="1600" alt="Zona de dining cu candelabru Murano" loading="lazy" data-caption="Zona de dining cu candelabru Murano"><figcaption>Dining</figcaption></figure>
+          <figure class="tile" data-cat="baie"><img src="images/bathroom-1.jpg" width="1600" height="1200" alt="Baie modernă cu duș walk-in" loading="lazy" data-caption="Baie modernă cu duș walk-in"><figcaption>Baie</figcaption></figure>
+          <figure class="tile" data-cat="living"><img src="images/living-6.jpg" width="1200" height="1600" alt="Lumină caldă și plante decorative în living" loading="lazy" data-caption="Lumină caldă și plante decorative"><figcaption>Detalii</figcaption></figure>
+          <figure class="tile" data-cat="bucatarie"><img src="images/kitchen-3.jpg" width="1200" height="1600" alt="Spațiu de gătit funcțional" loading="lazy" data-caption="Spațiu de gătit funcțional"><figcaption>Bucătărie</figcaption></figure>
+          <figure class="tile" data-cat="living"><img src="images/living-7.jpg" width="1200" height="1600" alt="Atmosferă primitoare în zona de zi" loading="lazy" data-caption="Atmosferă primitoare în zona de zi"><figcaption>Living</figcaption></figure>
+          <figure class="tile" data-cat="living"><img src="images/living-4.jpg" width="1200" height="1600" alt="Detalii de design în living" loading="lazy" data-caption="Detalii de design în living"><figcaption>Detalii</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TUR VIDEO ===================== -->
+    <section class="section tur" id="tur">
+      <div class="container tur__grid">
+        <div class="tur__text">
+          <p class="kicker" data-reveal>Tur video</p>
+          <h2 class="h2" data-reveal>Plimbă-te prin rezidență</h2>
+          <p class="lead" data-reveal>
+            O scurtă plimbare prin <strong>Onix Blue Residence</strong> seara — alei luminate, spații verzi și
+            liniște, la doar câțiva pași de mare.
+          </p>
+          <ul class="ticks" data-reveal>
+            <li>Rezidență modernă, cu pază</li>
+            <li>Spații verzi &amp; alei iluminate</li>
+            <li>Acces facil auto și parcare</li>
+          </ul>
+        </div>
+
+        <div class="tur__phone" data-reveal>
+          <div class="phone">
+            <video id="tourVideo" class="phone__video" poster="images/tour-poster.jpg" playsinline preload="none" controls>
+              <source src="images/tour.mp4" type="video/mp4" />
+              Browserul tău nu suportă redarea video.
+            </video>
+            <button class="phone__play" id="playBtn" aria-label="Redă videoul">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <span class="phone__glow" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOCAȚIE ===================== -->
+    <section class="section locatie" id="locatie">
+      <div class="container locatie__grid">
+        <div class="locatie__info">
+          <p class="kicker" data-reveal>Locație</p>
+          <h2 class="h2" data-reveal>În inima stațiunii Mamaia Nord</h2>
+          <p class="lead" data-reveal>
+            Onix Blue Residence, Mamaia Nord, Năvodari — județul Constanța. Plajă, terase și distracție,
+            toate la îndemână.
+          </p>
+
+          <ul class="poi" data-reveal>
+            <li><span class="poi__ic">🏖️</span> Plaja Mamaia Nord — la câteva minute de mers</li>
+            <li><span class="poi__ic">🍹</span> Restaurante, terase &amp; beach-baruri în zonă</li>
+            <li><span class="poi__ic">🚗</span> Acces facil auto &amp; parcare în rezidență</li>
+            <li><span class="poi__ic">🌅</span> Promenadă și răsărituri spre mare</li>
+          </ul>
+
+          <div class="locatie__actions" data-reveal>
+            <a class="btn btn--sea" href="https://www.google.com/maps/search/?api=1&query=44.28967636254251,28.62018839399563" target="_blank" rel="noopener">Deschide în Google Maps</a>
+            <a class="btn btn--ghost btn--ghost-dark" href="https://www.turistinfo.ro/navodari/cazare-navodari/valentina_sea_and_sun_apartment-c129143.html" target="_blank" rel="noopener">Vezi anunțul pe TuristInfo</a>
+          </div>
+        </div>
+
+        <div class="locatie__map" data-reveal>
+          <iframe
+            title="Harta — Onix Blue Residence, Mamaia Nord"
+            src="https://www.google.com/maps?q=44.28967636254251,28.62018839399563&z=16&hl=ro&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <p class="kicker" data-reveal>Rezervări</p>
+          <h2 class="h2" data-reveal>Rezervă-ți vacanța la mare</h2>
+          <p class="lead" data-reveal>Spune-ne perioada dorită și numărul de persoane — îți răspundem rapid, pe WhatsApp sau telefon.</p>
+
+          <ul class="contact__list" data-reveal>
+            <!-- EDITEAZĂ datele de contact în script.js (obiectul CONFIG) -->
+            <li>
+              <span class="contact__ic">📞</span>
+              <a id="contactPhone" href="#">+40 7XX XXX XXX</a>
+            </li>
+            <li>
+              <span class="contact__ic">💬</span>
+              <a id="contactWhatsApp" href="#" target="_blank" rel="noopener">Scrie pe WhatsApp</a>
+            </li>
+            <li>
+              <span class="contact__ic">✉️</span>
+              <a id="contactEmail" href="#">contact@exemplu.ro</a>
+            </li>
+            <li>
+              <span class="contact__ic">📍</span>
+              <span>Onix Blue Residence, Mamaia Nord, Năvodari</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="booking" id="bookingForm" data-reveal novalidate>
+          <div class="field">
+            <label for="bName">Nume</label>
+            <input type="text" id="bName" name="name" placeholder="Numele tău" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bIn">Check-in</label>
+              <input type="date" id="bIn" name="checkin" required />
+            </div>
+            <div class="field">
+              <label for="bOut">Check-out</label>
+              <input type="date" id="bOut" name="checkout" required />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bGuests">Persoane</label>
+              <select id="bGuests" name="guests">
+                <option value="1">1 persoană</option>
+                <option value="2" selected>2 persoane</option>
+                <option value="3">3 persoane</option>
+                <option value="4">4 persoane</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bPhone">Telefonul tău</label>
+              <input type="tel" id="bPhone" name="phone" placeholder="07XX XXX XXX" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="bMsg">Mesaj (opțional)</label>
+            <textarea id="bMsg" name="message" rows="3" placeholder="Întrebări, cerințe speciale…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--sun btn--full">Trimite cererea pe WhatsApp</button>
+          <p class="booking__note">Rezervarea se confirmă telefonic sau pe WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">V</span>
+        <div>
+          <strong>Valentina Sea &amp; Sun</strong>
+          <p>Vacanța ta la mare începe aici.</p>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Navigare subsol">
+        <a href="#despre">Despre</a>
+        <a href="#facilitati">Facilități</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#tur">Tur video</a>
+        <a href="#locatie">Locație</a>
+        <a href="#contact">Rezervă</a>
+      </nav>
+      <p class="footer__meta">
+        Onix Blue Residence · Mamaia Nord, Năvodari, jud. Constanța<br />
+        <span id="year"></span> Valentina Sea &amp; Sun Apartment
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Înapoi sus">↑</button>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galerie foto">
+    <button class="lightbox__close" id="lbClose" aria-label="Închide">✕</button>
+    <button class="lightbox__nav lightbox__prev" id="lbPrev" aria-label="Imaginea anterioară">‹</button>
+    <figure class="lightbox__stage">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="Imaginea următoare">›</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
