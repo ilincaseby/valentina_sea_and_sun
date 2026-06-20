@@ -287,21 +287,25 @@ const CONFIG = {
       const phone = $("#bPhone").value.trim();
       const msg = $("#bMsg").value.trim();
 
-      let text = `Bună! Aș dori să rezerv apartamentul *Valentina Sea & Sun* (Mamaia Nord).%0A`;
-      text += `%0A👤 Nume: ${enc(name)}`;
-      text += `%0A📅 Check-in: ${enc(cin)}`;
-      text += `%0A📅 Check-out: ${enc(cout)}`;
-      text += `%0A👥 Persoane: ${enc(guests)}`;
-      if (phone) text += `%0A📞 Telefon: ${enc(phone)}`;
-      if (msg)   text += `%0A📝 Mesaj: ${enc(msg)}`;
+      const lines = [
+        "Bună! Aș dori să rezerv apartamentul *Valentina Sea & Sun* (Mamaia Nord).",
+        "",
+        "👤 Nume: " + name,
+        "📅 Check-in: " + cin,
+        "📅 Check-out: " + cout,
+        "👥 Persoane: " + guests,
+      ];
+      if (phone) lines.push("📞 Telefon: " + phone);
+      if (msg)   lines.push("📝 Mesaj: " + msg);
 
+      // encode the whole message once so characters like & don't break the URL
+      const text = encodeURIComponent(lines.join("\n"));
       window.open(`https://wa.me/${CONFIG.whatsapp}?text=${text}`, "_blank", "noopener");
     });
     // clear invalid on input
     $$("#bookingForm input, #bookingForm select").forEach(el =>
       el.addEventListener("input", () => el.classList.remove("invalid")));
   }
-  const enc = s => encodeURIComponent(s).replace(/%20/g, " ");
 
   /* ---------- Year ---------- */
   function initYear() { const y = $("#year"); if (y) y.textContent = "© " + new Date().getFullYear(); }
