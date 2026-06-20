@@ -110,10 +110,19 @@
         <span class="scroll-cue__txt">scroll</span>
       </a>
 
-      <!-- wave divider -->
+      <!-- soft fade + animated waves -->
+      <div class="hero__fade" aria-hidden="true"></div>
       <div class="wave-divider" aria-hidden="true">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path d="M0,64 C240,120 480,0 720,40 C960,80 1200,120 1440,56 L1440,120 L0,120 Z"></path>
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="wave-parallax">
+            <use href="#gentle-wave" x="48" y="0" fill="rgba(251,247,240,0.35)" />
+            <use href="#gentle-wave" x="48" y="3" fill="rgba(251,247,240,0.55)" />
+            <use href="#gentle-wave" x="48" y="5" fill="rgba(251,247,240,0.8)" />
+            <use href="#gentle-wave" x="48" y="7" fill="var(--cream)" />
+          </g>
         </svg>
       </div>
     </section>
